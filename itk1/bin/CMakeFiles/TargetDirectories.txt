@@ -1,0 +1,3 @@
+F:/Ye/sfsu/csc821/project/itk1/bin/CMakeFiles/HelloWorld.dir
+F:/Ye/sfsu/csc821/project/itk1/bin/CMakeFiles/ALL_BUILD.dir
+F:/Ye/sfsu/csc821/project/itk1/bin/CMakeFiles/ZERO_CHECK.dir
