@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     std::cerr << "Required: filename" << std::endl;
     return EXIT_FAILURE;
     }
-std::cout << "Test" << std::endl;
+    std::cout << "Test" << std::endl;
   typedef itk::Image<unsigned char, 2>  ImageType;
 
   typedef itk::ImageFileReader<ImageType> ReaderType;
