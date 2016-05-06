@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Xdlulu\Documents\Visual Studio 2015\Projects\smoothfilter3\src\DiscreteGaussianImageFilter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Xdlulu\Documents\Visual Studio 2015\Projects\smoothfilter3\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{110363DC-E2C7-393A-B82F-12A152ED3C66}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+﻿Build started 2/21/2016 2:00:57 PM.
+     1>Project "F:\Ye\sfsu\csc821\project\example\QuickViewDemo\bin\ZERO_CHECK.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because F:/Ye/sfsu/csc821/project/example/QuickViewDemo/bin/CMakeFiles/generate.stamp is up-to-date.
+     1>Done Building Project "F:\Ye\sfsu\csc821\project\example\QuickViewDemo\bin\ZERO_CHECK.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.17

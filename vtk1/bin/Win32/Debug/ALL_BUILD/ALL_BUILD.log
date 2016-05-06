@@ -1,0 +1,10 @@
+﻿Build started 2/20/2016 10:16:01 PM.
+     1>Project "F:\Ye\sfsu\csc821\project\vtk1\bin\ALL_BUILD.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule F:/Ye/sfsu/csc821/project/vtk1/src/CMakeLists.txt
+         CMake does not need to re-run because F:\Ye\sfsu\csc821\project\vtk1\bin\CMakeFiles\generate.stamp is up-to-date.
+     1>Done Building Project "F:\Ye\sfsu\csc821\project\vtk1\bin\ALL_BUILD.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.08
