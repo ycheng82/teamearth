@@ -1,3 +1,0 @@
-C:/Users/Xdlulu/Documents/Visual Studio 2015/Projects/regist/bin/CMakeFiles/texter.dir
-C:/Users/Xdlulu/Documents/Visual Studio 2015/Projects/regist/bin/CMakeFiles/ALL_BUILD.dir
-C:/Users/Xdlulu/Documents/Visual Studio 2015/Projects/regist/bin/CMakeFiles/ZERO_CHECK.dir
