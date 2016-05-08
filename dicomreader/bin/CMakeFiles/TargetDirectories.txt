@@ -1,0 +1,3 @@
+C:/Users/Xdlulu/Desktop/teamearth/dicomreader/bin/CMakeFiles/DicomSeriesReadImageWrite2.dir
+C:/Users/Xdlulu/Desktop/teamearth/dicomreader/bin/CMakeFiles/ALL_BUILD.dir
+C:/Users/Xdlulu/Desktop/teamearth/dicomreader/bin/CMakeFiles/ZERO_CHECK.dir
