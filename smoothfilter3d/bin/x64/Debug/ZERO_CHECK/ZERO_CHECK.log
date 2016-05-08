@@ -1,4 +1,4 @@
-﻿Build started 5/6/2016 4:02:12 AM.
+﻿Build started 5/8/2016 3:17:31 AM.
      1>Project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "14.0".
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (entry point):
@@ -101,7 +101,6 @@
        Task "VCMessage" skipped, due to false condition; ('$(IgnoreWarnIntDirSharingDetected)' != 'true' and '$(IntDirSharingDetected)' == 'true') was evaluated as ('' != 'true' and '' == 'true').
        Task "VCMessage" skipped, due to false condition; ('$(IgnoreWarnIntDirInTempDetected)' != 'true' and ('$(_IntDirFullpath.StartsWith($(Tmp), true, null))' == 'true' or '$(_IntDirFullpath.StartsWith($(Temp), true, null))' == 'true' or '$(_OutDirFullpath.StartsWith($(Tmp), true, null))' == 'true' or '$(_OutDirFullpath.StartsWith($(Temp), true, null))' == 'true')) was evaluated as ('' != 'true' and ('False' == 'true' or 'False' == 'true' or 'False' == 'true' or 'False' == 'true')).
        Task "MakeDir"
-         Creating directory "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\".
        Done executing task "MakeDir".
      1>Done building target "PrepareForBuild" in project "ZERO_CHECK.vcxproj".
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
@@ -142,7 +141,7 @@
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Touch"
-         Creating "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild".
        Done executing task "Touch".
      1>Done building target "InitializeBuildStatus" in project "ZERO_CHECK.vcxproj".
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
@@ -168,12 +167,19 @@
      1>Target "ComputeCustomBuildOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "CustomBuild" depends on it):
        Task "CreateItem" skipped, due to false condition; ('%(CustomBuildDirsToMake.OutputFileToTool)'!='') was evaluated as (''!='').
        Task "MakeDir"
+         Creating directory "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\CMakeFiles\".
        Done executing task "MakeDir".
      1>Done building target "ComputeCustomBuildOutput" in project "ZERO_CHECK.vcxproj".
      1>Target "CustomBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
        Using "CustomBuild" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
        Task "CustomBuild"
-         Forcing rebuild of all source files due to missing command TLog "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\custombuild.command.1.tlog".
+         Write Tracking Logs:
+         	x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\custombuild.write.1.tlog
+         Read Tracking Logs:
+         	x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\custombuild.read.1.tlog
+         Outputs for C:\USERS\XDLULU\DESKTOP\TEAMEARTH\SMOOTHFILTER3D\BIN\CMAKEFILES\9E8B453549A19801935C36505C91949C\GENERATE.STAMP.RULE:
+         	C:\USERS\XDLULU\DESKTOP\TEAMEARTH\SMOOTHFILTER3D\BIN\CMAKEFILES\GENERATE.STAMP
+         C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\CMakeFiles\9e8b453549a19801935c36505c91949c\generate.stamp.rule will be compiled as it was not found in the tracking log.
          setlocal
          "C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Xdlulu/Desktop/teamearth/smoothfilter3d/src -BC:/Users/Xdlulu/Desktop/teamearth/smoothfilter3d/bin --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\DiscreteGaussianImageFilter.sln"
          if %errorlevel% neq 0 goto :cmEnd
@@ -184,80 +190,44 @@
          :cmDone
          if %errorlevel% neq 0 goto :VCEnd
          Checking Build System
-         CMake does not need to re-run because C:/Users/Xdlulu/Desktop/teamearth/smoothfilter3d/bin/CMakeFiles/generate.stamp is up-to-date.
-       Done executing task "CustomBuild".
-     1>Done building target "CustomBuild" in project "ZERO_CHECK.vcxproj".
-       Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
-       Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
-       Target "Xsd" skipped, due to false condition; ('@(Xsd)' != '') was evaluated as ('' != '').
-     1>Target "_Xsd" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-     1>Done building target "_Xsd" in project "ZERO_CHECK.vcxproj".
-     1>Target "MakeDirsForMidl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "_Midl" depends on it):
-       Task "Makedir"
-       Done executing task "Makedir".
-     1>Done building target "MakeDirsForMidl" in project "ZERO_CHECK.vcxproj".
-       Target "Midl" skipped, due to false condition; ('@(Midl)' != '') was evaluated as ('' != '').
-       Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
-       Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
-     1>Target "ComputeMIDLGeneratedCompileInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "_Midl" depends on it):
-     1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "ZERO_CHECK.vcxproj".
-     1>Target "AfterMidl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "_Midl" depends on it):
-     1>Done building target "AfterMidl" in project "ZERO_CHECK.vcxproj".
-     1>Target "_Midl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-     1>Done building target "_Midl" in project "ZERO_CHECK.vcxproj".
-     1>Target "AfterBuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-     1>Done building target "AfterBuildGenerateSources" in project "ZERO_CHECK.vcxproj".
-     1>Target "AfterBuildGenerateSourcesEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
-     1>Done building target "AfterBuildGenerateSourcesEvent" in project "ZERO_CHECK.vcxproj".
-     1>Target "_BuildGenerateSourcesAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "BuildGenerateSources" depends on it):
-     1>Done building target "_BuildGenerateSourcesAction" in project "ZERO_CHECK.vcxproj".
-     1>Target "BuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "Build" depends on it):
-     1>Done building target "BuildGenerateSources" in project "ZERO_CHECK.vcxproj".
-       Target "AssignProjectConfiguration" skipped. Previously built successfully.
-       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
-     1>Target "BuildCompileTraverse" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "BuildCompile" depends on it):
-       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
-     1>Done building target "BuildCompileTraverse" in project "ZERO_CHECK.vcxproj".
-       Target "PrepareForBuild" skipped. Previously built successfully.
-       Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "_BuildCompileAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "BuildCompile" depends on it):
-     1>Done building target "_BuildCompileAction" in project "ZERO_CHECK.vcxproj".
-     1>Target "BuildCompile" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "Build" depends on it):
-     1>Done building target "BuildCompile" in project "ZERO_CHECK.vcxproj".
-       Target "AssignProjectConfiguration" skipped. Previously built successfully.
-       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
-     1>Target "BuildLinkTraverse" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "BuildLink" depends on it):
-       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
-     1>Done building target "BuildLinkTraverse" in project "ZERO_CHECK.vcxproj".
-       Target "PrepareForBuild" skipped. Previously built successfully.
-       Target "ResolveReferences" skipped. Previously built successfully.
-       Target "RunMergeNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
-       Target "RunNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
-       Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-     1>Target "PostBuildEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "_BuildLinkAction" depends on it):
-       Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
-       Task "Exec" skipped, due to false condition; ('%(PostBuildEvent.Command)' != '') was evaluated as ('' != '').
-     1>Done building target "PostBuildEvent" in project "ZERO_CHECK.vcxproj".
-     1>Target "_BuildLinkAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "BuildLink" depends on it):
-     1>Done building target "_BuildLinkAction" in project "ZERO_CHECK.vcxproj".
-     1>Target "BuildLink" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "Build" depends on it):
-     1>Done building target "BuildLink" in project "ZERO_CHECK.vcxproj".
-       Target "CreateTfsBuildInfoResource" skipped, due to false condition; ( $(AddBuildInfoToAssembly)==true ) was evaluated as ( false==true ).
-     1>Target "AfterBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "Build" depends on it):
-     1>Done building target "AfterBuild" in project "ZERO_CHECK.vcxproj".
-     1>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (target "Build" depends on it):
-       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "Delete"
-         Deleting file "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild".
-       Done executing task "Delete".
-       Task "Touch"
-         Touching "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\ZERO_CHECK.lastbuildstate".
-       Done executing task "Touch".
-     1>Done building target "FinalizeBuildStatus" in project "ZERO_CHECK.vcxproj".
-     1>Target "Build" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (entry point):
-     1>Done building target "Build" in project "ZERO_CHECK.vcxproj".
-     1>Done Building Project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (Build target(s)).
+         CMake is re-running because generate.stamp.list is missing.
+         -- Building for: Visual Studio 14 2015
+         -- The C compiler identification is MSVC 19.0.23506.0
+         -- The CXX compiler identification is MSVC 19.0.23506.0
+         -- Check for working C compiler using: Visual Studio 14 2015
+         -- Check for working C compiler using: Visual Studio 14 2015 -- works
+         -- Detecting C compiler ABI info
+         -- Detecting C compiler ABI info - done
+         -- Check for working CXX compiler using: Visual Studio 14 2015
+         -- Check for working CXX compiler using: Visual Studio 14 2015 -- works
+         -- Detecting CXX compiler ABI info
+         -- Detecting CXX compiler ABI info - done
+         -- Detecting CXX compile features
+         -- Detecting CXX compile features - done
+         CMake Error at CMakeLists.txt:5 (find_package):
+           By not providing "FindITK.cmake" in CMAKE_MODULE_PATH this project has
+           asked CMake to find a package configuration file provided by "ITK", but
+           CMake did not find one.
+         
+           Could not find a package configuration file provided by "ITK" with any of
+           the following names:
+         
+             ITKConfig.cmake
+             itk-config.cmake
+         
+           Add the installation prefix of "ITK" to CMAKE_PREFIX_PATH or set "ITK_DIR"
+           to a directory containing one of the above files.  If "ITK" provides a
+           separate development package or SDK, be sure it has been installed.
+         
+         
+         -- Configuring incomplete, errors occurred!
+         See also "C:/Users/Xdlulu/Desktop/teamearth/smoothfilter3d/bin/CMakeFiles/CMakeOutput.log".
+         CMake Configure step failed.  Build files cannot be regenerated correctly.  Attempting to stop IDE build.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(171,5): error MSB6006: "cmd.exe" exited with code -1073741819.
+       Done executing task "CustomBuild" -- FAILED.
+     1>Done building target "CustomBuild" in project "ZERO_CHECK.vcxproj" -- FAILED.
+     1>Done Building Project "C:\Users\Xdlulu\Desktop\teamearth\smoothfilter3d\bin\ZERO_CHECK.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.42
+Time Elapsed 00:00:06.62
