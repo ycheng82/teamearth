@@ -1,3 +1,0 @@
-F:/Ye/sfsu/csc821/project/vtk2/bin/CMakeFiles/Cylinder.dir
-F:/Ye/sfsu/csc821/project/vtk2/bin/CMakeFiles/ALL_BUILD.dir
-F:/Ye/sfsu/csc821/project/vtk2/bin/CMakeFiles/ZERO_CHECK.dir

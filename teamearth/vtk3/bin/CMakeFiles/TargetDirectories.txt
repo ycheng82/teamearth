@@ -1,3 +1,0 @@
-F:/Ye/sfsu/csc821/project/vtk3/bin/CMakeFiles/DrawText.dir
-F:/Ye/sfsu/csc821/project/vtk3/bin/CMakeFiles/ALL_BUILD.dir
-F:/Ye/sfsu/csc821/project/vtk3/bin/CMakeFiles/ZERO_CHECK.dir

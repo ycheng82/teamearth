@@ -1,3 +1,0 @@
-F:/Ye/sfsu/csc821/project/example/QuickViewDemo/bin/CMakeFiles/QuickViewDemo.dir
-F:/Ye/sfsu/csc821/project/example/QuickViewDemo/bin/CMakeFiles/ALL_BUILD.dir
-F:/Ye/sfsu/csc821/project/example/QuickViewDemo/bin/CMakeFiles/ZERO_CHECK.dir
