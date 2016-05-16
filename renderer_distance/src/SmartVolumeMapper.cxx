@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
   if (argc < 3)
     {
-    cout << "USAGE: smartvolumemapper <filename> <mode>\n Modes: -S : axial sagattal co view, -V : 3D mode" << endl;
+    cout << "USAGE: smartvolumemapper <filename> <mode>\n Modes: -S : locks axis, -V : 3D mode" << endl;
     return 0;
     }
   else
@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
     
     }
  
-  //setup the 3 different views
+  //setup the 4 different views
 vtkStdString mode = argv[2];
   vtkSmartPointer<vtkSmartVolumeMapper> volumeMapper = 
     vtkSmartPointer<vtkSmartVolumeMapper>::New();
@@ -75,7 +75,8 @@ vtkStdString mode = argv[2];
   volumeMapper2->SetInputData(imageData);
   volumeMapper3->SetInputData(imageData);
   volumeMapper4->SetInputData(imageData);
-#endif  
+#endif 
+//turn off shading to improve performance 
   vtkSmartPointer<vtkVolumeProperty> volumeProperty = 
     vtkSmartPointer<vtkVolumeProperty>::New();
   volumeProperty->ShadeOff();
@@ -124,7 +125,7 @@ vtkStdString mode = argv[2];
     compositeOpacity3->AddPoint(1000.0,0.0);
 
 
-  //organs
+  //test
   vtkSmartPointer<vtkPiecewiseFunction> compositeOpacity4 = 
     vtkSmartPointer<vtkPiecewiseFunction>::New();
 
@@ -190,7 +191,7 @@ vtkStdString mode = argv[2];
 
   //set up interactor
   vtkSmartPointer<vtkInteractorStyleImage> style = vtkSmartPointer<vtkInteractorStyleImage>::New();
-  if (mode == "-S")
+  if (mode == "-S") //change style based on args
   {
     style->SetInteractionModeToImageSlicing();
   }
@@ -202,11 +203,12 @@ vtkStdString mode = argv[2];
   interactor->SetRenderWindow(renderWindow);
   interactor->SetInteractorStyle(style);
 
+//distance measure based on two points
   vtkSmartPointer<vtkDistanceWidget> distanceWidget = vtkSmartPointer<vtkDistanceWidget>::New();
   distanceWidget->SetInteractor(interactor);
   distanceWidget->CreateDefaultRepresentation();
   static_cast<vtkDistanceRepresentation *>(distanceWidget->GetRepresentation())
-    ->SetLabelFormat("%-#6.3g mm");
+    ->SetLabelFormat("%-#6.3g mm"); //assuming dicom used mm
 
   //set up the viewports
   double topLeft[4] =     {0.0, 0.0, 0.5, 0.5};

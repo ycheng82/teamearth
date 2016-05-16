@@ -32,6 +32,8 @@
 #include <vtkImplicitPlaneWidget2.h>
 #include <vtkImplicitPlaneRepresentation.h>
 
+
+//callback that handles the plane widget
 class vtkIPWCallback : public vtkCommand
 {
 public:
@@ -65,7 +67,7 @@ int main(int argc, char *argv[])
 
   if (argc < 3)
     {
-    cout << "USAGE: smartvolumemapper <filename> <mode>\n Modes: -S : axial sagattal co view, -V : 3D mode" << endl;
+    cout << "USAGE: smartvolumemapper <filename> <mode>\n Modes: -S : locks axis, -V : 3D mode" << endl;
     return 0;
     }
   else
@@ -78,7 +80,7 @@ int main(int argc, char *argv[])
     
     }
  
-  //setup the 3 different views
+  //setup the 4 different views
 vtkStdString mode = argv[2];
   vtkSmartPointer<vtkSmartVolumeMapper> volumeMapper = 
     vtkSmartPointer<vtkSmartVolumeMapper>::New();
@@ -108,7 +110,7 @@ vtkStdString mode = argv[2];
   volumeMapper2->SetInputData(imageData);
   volumeMapper3->SetInputData(imageData);
   volumeMapper4->SetInputData(imageData);
-#endif  
+#endif  //turn off shading for performance
   vtkSmartPointer<vtkVolumeProperty> volumeProperty = 
     vtkSmartPointer<vtkVolumeProperty>::New();
   volumeProperty->ShadeOff();
@@ -157,7 +159,7 @@ vtkStdString mode = argv[2];
     compositeOpacity3->AddPoint(1000.0,0.0);
 
 
-  //organs
+  //test
   vtkSmartPointer<vtkPiecewiseFunction> compositeOpacity4 = 
     vtkSmartPointer<vtkPiecewiseFunction>::New();
 
@@ -254,7 +256,7 @@ vtkStdString mode = argv[2];
   planeWidget->SetRepresentation(rep);
   planeWidget->AddObserver(vtkCommand::InteractionEvent,myCallback);
 
-
+//making the plane slice volume
   volumeMapper->AddClippingPlane(plane);
   volumeMapper2->AddClippingPlane(plane);
   volumeMapper3->AddClippingPlane(plane);
