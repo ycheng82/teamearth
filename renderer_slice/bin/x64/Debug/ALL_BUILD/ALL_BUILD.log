@@ -1,0 +1,10 @@
+﻿Build started 5/16/2016 1:54:13 AM.
+     1>Project "C:\rendererclip\bin\ALL_BUILD.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/rendererclip/src/CMakeLists.txt
+         CMake does not need to re-run because C:\rendererclip\bin\CMakeFiles\generate.stamp is up-to-date.
+     1>Done Building Project "C:\rendererclip\bin\ALL_BUILD.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.18
