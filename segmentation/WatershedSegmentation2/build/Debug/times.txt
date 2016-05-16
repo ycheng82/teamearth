@@ -1,0 +1,55 @@
+3d_test_50_output_0.05_0.17
+
+System:              Dusans-MacBook-Pro.local
+Processor:           Intel(R) Core(TM) i5-4278U CPU @ 2.60GHz
+    Cache:           32768
+    Clock:           2600
+    Cores:           2 cpus x 4 Cores = 8
+    Virtual Memory:  Total: 3072 Available: 899
+    Physical Memory: Total:8192 Available: 852
+OSName:              Mac OS X
+    Release:         10.11.4
+    Version:         15E65
+    Platform:        x86_64
+    Operating System is 64 bit
+ITK Version: 4.9.0
+Name Of Probe(Time)           Iteration      Total(s)       Min(s)         Mean(s)        Max(s)         Std(s)         
+watershedFilter               1              694.235        694.235  
+
+3d_test_50_output_0.15_0.15
+
+System:              Dusans-MacBook-Pro.local
+Processor:           Intel(R) Core(TM) i5-4278U CPU @ 2.60GHz
+    Cache:           32768
+    Clock:           2600
+    Cores:           2 cpus x 4 Cores = 8
+    Virtual Memory:  Total: 3072 Available: 931
+    Physical Memory: Total:8192 Available: 70
+OSName:              Mac OS X
+    Release:         10.11.4
+    Version:         15E65
+    Platform:        x86_64
+    Operating System is 64 bit
+ITK Version: 4.9.0
+Name Of Probe(Time)           Iteration      Total(s)       Min(s)         Mean(s)        Max(s)         Std(s)         
+watershedFilter               1              2595.86        2595.86        2595.86        2595.86        0              
+Program ended with exit code: 0
+
+Pipeline execution started threshold: 0.018 level: 0.14
+Pipeline execution ended
+System:              Dusans-MacBook-Pro.local
+Processor:           Intel(R) Core(TM) i5-4278U CPU @ 2.60GHz
+    Cache:           32768
+    Clock:           2600
+    Cores:           2 cpus x 4 Cores = 8
+    Virtual Memory:  Total: 3072 Available: 930
+    Physical Memory: Total:8192 Available: 267
+OSName:              Mac OS X
+    Release:         10.11.4
+    Version:         15E65
+    Platform:        x86_64
+    Operating System is 64 bit
+ITK Version: 4.9.0
+Name Of Probe(Time)           Iteration      Total(s)       Min(s)         Mean(s)        Max(s)         Std(s)         
+watershedFilter               1              315.995        315.995        315.995        315.995        0              
+Program ended with exit code: 0
