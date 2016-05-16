@@ -27,7 +27,6 @@ typedef itk::RGBPixel<unsigned char>       RGBPixelType;
 typedef itk::Image<RGBPixelType, 2>        RGBImageType;
 typedef itk::Image<itk::IdentifierType, 2> LabeledImageType;
 
-static void CreateImage(UnsignedCharImageType::Pointer image);
 static void PerformSegmentation(FloatImageType::Pointer image, const float threshold, const float level);
 
 int main( int argc, char *argv[] )
@@ -64,8 +63,6 @@ int main( int argc, char *argv[] )
 	<< "Threshold: " << threshold << std::endl
 	<< "Level: " << level << std::endl;
 	
-	UnsignedCharImageType::Pointer image = UnsignedCharImageType::New();
-	CreateImage(image);
 	
 	typedef itk::GradientMagnitudeImageFilter<
 	UnsignedCharImageType, FloatImageType >  GradientMagnitudeImageFilterType;
@@ -93,89 +90,9 @@ int main( int argc, char *argv[] )
 	}
 	timer.Report( std::cout );
 	
-	// Fixed parameters
-//	PerformSegmentation(gradientMagnitudeImageFilter->GetOutput(), .0025, .25);
-//	PerformSegmentation(gradientMagnitudeImageFilter->GetOutput(), .005, .5);
-//	PerformSegmentation(gradientMagnitudeImageFilter->GetOutput(), .0075, .75);
-//	PerformSegmentation(gradientMagnitudeImageFilter->GetOutput(), .009, .9);
-	
-	
-//	QuickView viewer;
-//	reader->SetFileName(name+"0.0025" + "_0.25"+".png");
-//	viewer.AddImage(reader->GetOutput());
-//	reader->SetFileName(name+"0.005" + "_0.5"+".png");
-//	viewer.AddImage(reader->GetOutput());
-//	reader->SetFileName(name+"0.0075" + "_0.75"+".png");
-//	viewer.AddImage(reader->GetOutput());
-//	reader->SetFileName(name+"0.009" + "_0.9"+".png");
-//	viewer.AddImage(reader->GetOutput());
-	
-//	reader->SetFileName(name+ssThreshold.str() + "_"+ssLevel.str()+".png");
-//	viewer.AddImage(reader->GetOutput());
-
-//	reader->SetFileName("input.png");
-//	viewer.AddImage(reader->GetOutput());
-	
-//	viewer.Visualize();
-	
 	return EXIT_SUCCESS;
 }
 
-
-void CreateImage(UnsignedCharImageType::Pointer image)
-{
-	// Create a white image with 3 dark regions of different values
-	
-	itk::Index<2> start;
-	start.Fill(0);
-	
-	itk::Size<2> size;
-	size.Fill(200);
-	
-	itk::ImageRegion<2> region(start,size);
-	image->SetRegions(region);
-	image->Allocate();
-	image->FillBuffer(255);
-	
-	itk::ImageRegionIterator<UnsignedCharImageType> imageIterator(image,region);
- 
-	while(!imageIterator.IsAtEnd())
-	{
-		if(imageIterator.GetIndex()[0] > 20 && imageIterator.GetIndex()[0] < 50 &&
-		   imageIterator.GetIndex()[1] > 20 && imageIterator.GetIndex()[1] < 50)
-			imageIterator.Set(50);
-		
-		++imageIterator;
-	}
-	
-	imageIterator.GoToBegin();
-	
-	while(!imageIterator.IsAtEnd())
-	{
-		if(imageIterator.GetIndex()[0] > 60 && imageIterator.GetIndex()[0] < 80 &&
-		   imageIterator.GetIndex()[1] > 60 && imageIterator.GetIndex()[1] < 80)
-			imageIterator.Set(100);
-		
-		++imageIterator;
-	}
-	
-	imageIterator.GoToBegin();
-	
-	while(!imageIterator.IsAtEnd())
-	{
-		if(imageIterator.GetIndex()[0] > 100 && imageIterator.GetIndex()[0] < 130 &&
-		   imageIterator.GetIndex()[1] > 100 && imageIterator.GetIndex()[1] < 130)
-			imageIterator.Set(150);
-		
-		++imageIterator;
-	}
-	
-	typedef itk::ImageFileWriter<UnsignedCharImageType> FileWriterType;
-	FileWriterType::Pointer writer = FileWriterType::New();
-	writer->SetFileName("input.png");
-	writer->SetInput(image);
-	writer->Update();
-}
 
 void PerformSegmentation(FloatImageType::Pointer image, const float threshold, const float level)
 {
