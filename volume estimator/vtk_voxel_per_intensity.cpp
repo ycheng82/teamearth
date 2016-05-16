@@ -50,9 +50,13 @@ int main(int argc, char ** argv){
 		cout << "File is open" << endl;
 		ifstream infile{file_argument};
 		string file_contents{ istreambuf_iterator<char>(infile), istreambuf_iterator<char>() };
+		int line_break = 0;
 		for (int i = 0;; i++){
-			if (file_contents[i] == 3){
-				file_pos = i;
+			if (file_contents[i] == 10){
+				line_break++;
+			}
+			if (line_break == 9){
+				file_pos = i+1;
 				break;
 			}
 		}
@@ -76,7 +80,6 @@ int main(int argc, char ** argv){
 	for (std::map<int, int>::iterator it = voxel_intensity_values.begin(); it != voxel_intensity_values.end(); ++it){
 		cout << "Intensity value [ " << std::hex << it->first << " ]:  " << std::dec << it->second << " voxels" <<  endl;
 	}
-
 
 	file.close();
 
