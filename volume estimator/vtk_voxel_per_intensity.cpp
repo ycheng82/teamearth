@@ -7,7 +7,7 @@
 #include <map>
 using namespace std;
 
-
+//
 //these two split functions are only for checking if the file ends in .vtk
 std::vector<std::string> &split(const std::string &s, char delim, std::vector<std::string> &elems) {
     std::stringstream ss(s);
